@@ -7,6 +7,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: a11ytester
-        uses: mikaelvesavuori/a11ytester-action@v1.0.0
+        uses: mikaelvesavuori/a11ytester-action@v1
         with:
           urls: '[\"benefits.gov\"]'
