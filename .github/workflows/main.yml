@@ -10,7 +10,10 @@ jobs:
         uses: mikaelvesavuori/a11ytester-action@v1
         with:
           urls: '[\"benefits.gov\"]'
-      - uses: actions/upload-artifact@v3
+      - name: Check files and folders
+        run: ls -a
+      - name: Upload reports
+        uses: actions/upload-artifact@v3
         with:
           name: a11y-reports
           path: results/
