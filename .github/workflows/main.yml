@@ -11,7 +11,7 @@ jobs:
         with:
           urls: '[\"benefits.gov\"]'
       - name: Check files and folders
-        run: ls -a
+        run: ls -a && ls -a reports/
       - name: Upload reports
         uses: actions/upload-artifact@v3
         with:
