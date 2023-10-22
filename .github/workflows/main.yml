@@ -1,0 +1,12 @@
+on: [push]
+
+jobs:
+  accessibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: a11ytester
+        uses: mikaelvesavuori/a11ytester-action@v1.0.0
+        with:
+          urls: '[\"benefits.gov\"]'
